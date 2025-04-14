@@ -1,40 +1,31 @@
 .card__image-wrapper {
   position: relative;
   display: inline-block;
+  padding-bottom: 8px;
 }
 
-.card__image-wrapper img {
-  padding: 8px;
-  border-radius: 15px;
-  position: relative;
-  z-index: 1;
-}
-
-.card__image-wrapper::before {
-  content: "";
-  position: absolute;
-  left: -2px;
-  bottom: -87px;
-  width: 320px;
-  height: 200px;
-  background-image: url("../../assets/rectangle.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 0;
+.card__image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border-left: 3px dashed var(--primary-color); /* Bordure gauche */
+  border-bottom: 3px dashed var(--primary-color); /* Bordure bas */
 }
 
 .card__info {
-  margin-top: 10px;
+  margin-top: -15px;
 }
 
 .card__title {
-  font-size: 17px;
+  font-size: var(--font-sm);
   font-weight: 700;
+  margin-bottom: 4px;
 }
 
 .card__availability {
-  font-size: 14px;
+  font-size: var(--font-xs);
   font-weight: 400;
+  margin-top: -2px;
 }
 
 .card__owner {

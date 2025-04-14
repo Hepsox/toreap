@@ -1,0 +1,54 @@
+.footer {
+  background-color: white; /* Couleur de fond blanche */
+  border-top-left-radius: 8px; /* Rayon pour le coin supérieur gauche */
+  border-top-right-radius: 8px; /* Rayon pour le coin supérieur droit */
+  padding: 8px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-size: 12px;
+}
+
+.footer__icon-img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.footer__text {
+  font-weight: 500;
+}
+
+.footer__item--add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border: 3px dashed var(--primary-color);
+  width: 60px; /* Largeur plus grande pour l'effet obus */
+  height: 40px; /* Hauteur plus petite */
+  border-radius: 30px; /* Bords arrondis pour l'effet obus */
+  position: relative;
+  top: -12px;
+}
+
+.footer__add-icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
