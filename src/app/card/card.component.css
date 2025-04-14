@@ -5,7 +5,7 @@
 
 .card__image-wrapper img {
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 15px;
   position: relative;
   z-index: 1;
 }
@@ -28,16 +28,15 @@
 }
 
 .card__title {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .card__availability {
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .card__owner {
-  font-weight: 700;
   color: var(--secondary-color);
 }

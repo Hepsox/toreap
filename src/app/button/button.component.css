@@ -1,0 +1,31 @@
+.button {
+  width: 100%;
+}
+
+.button__link {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  border: 3px dashed var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.button__link--secondary {
+  background-color: transparent;
+  border: 1px solid var(--text-color-light);
+  color: var(--text-color-light);
+}
+
+.button__link--disabled {
+  background-color: #bdc3c7;
+  pointer-events: none;
+  opacity: 0.6;
+  color: #fff;
+}

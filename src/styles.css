@@ -9,6 +9,7 @@
   --primary-color: #4f14ce;
   --secondary-color: #f37bd9;
   --text-color: #000000;
+  --text-color-light: #696969;
 }
 .img-fluid {
   max-width: 100%;
