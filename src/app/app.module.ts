@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { ButtonComponent } from './button/button.component';
+import { CardHorizontalComponent } from './card-horizontal/card-horizontal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    ButtonComponent
+    ButtonComponent,
+    CardHorizontalComponent
   ],
   imports: [
     BrowserModule,
