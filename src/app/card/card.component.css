@@ -1,0 +1,43 @@
+.card__image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.card__image-wrapper img {
+  padding: 8px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.card__image-wrapper::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  bottom: -87px;
+  width: 320px;
+  height: 200px;
+  background-image: url("../../assets/rectangle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+
+.card__info {
+  margin-top: 10px;
+}
+
+.card__title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card__availability {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.card__owner {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
