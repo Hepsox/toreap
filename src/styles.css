@@ -1,7 +1,5 @@
 * {
   font-family: "Urbanist", sans-serif;
-  margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,8 +8,126 @@
   --secondary-color: #f37bd9;
   --text-color: #000000;
   --text-color-light: #696969;
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-md: 17px;
+  --font-lg: 30px;
 }
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.auth {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.auth__logo {
+  width: 250px;
+  height: auto;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 30px;
+}
+
+.auth__title {
+  margin: 0;
+  color: white;
+  font-size: var(--font-lg);
+}
+
+.auth__description {
+  margin: 0;
+  color: white;
+  font-size: var(--font-sm);
+}
+
+.auth__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.auth__label {
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 500;
+}
+
+.auth__input {
+  padding: 15px 12px;
+  font-size: var(--font-sm);
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+.auth__input::placeholder {
+  color: white;
+}
+
+.auth__forgot {
+  align-self: flex-start;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.auth__link {
+  color: white;
+  text-decoration: none;
+  font-size: var(--font-sm);
+}
+
+.auth__button {
+  width: 100%;
+  padding: 15px 12px;
+  font-size: var(--font-md);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.auth__footer {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+.auth__footer-text {
+  font-size: var(--font-sm);
+}
+
+.auth__footer-text .auth__link {
+  color: var(--secondary-color);
+  font-weight: 700;
+  text-decoration: none;
 }
